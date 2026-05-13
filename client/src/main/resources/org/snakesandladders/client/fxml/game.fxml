@@ -11,7 +11,7 @@
       spacing="16"
       alignment="CENTER">
 
-    <Canvas fx:id="boardCanvas" width="600" height="600"/>
+    <Canvas fx:id="boardCanvas" width="680" height="680"/>
 
     <VBox spacing="12" alignment="TOP_CENTER" styleClass="side-panel">
 

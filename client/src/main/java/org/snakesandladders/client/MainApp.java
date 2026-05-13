@@ -7,6 +7,21 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.snakesandladders.client.controller.EndController;
 
+
+
+
+
+
+
+/*
+ssh -i ~/.ssh/Snake-Key.pem ubuntu@51.21.2.225
+
+java -jar ~/server-jar-with-dependencies.jar
+
+mvn javafx:run -pl client
+
+
+*/
 public class MainApp extends Application {
 
     private static Stage primaryStage;
@@ -25,7 +40,7 @@ public class MainApp extends Application {
     }
 
     public static void showGameScreen() throws Exception {
-        loadScene("/org/snakesandladders/client/fxml/game.fxml", 900, 750);
+        loadScene("/org/snakesandladders/client/fxml/game.fxml", 1020, 750);
     }
 
     public static void showEndScreen(String winnerName, boolean isWinner) throws Exception {
