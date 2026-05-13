@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.snakesandladders.client.controller.EndController"
+      styleClass="root-container"
+      stylesheets="@../css/style.css"
+      alignment="CENTER"
+      spacing="24">
+
+    <Label fx:id="resultLabel" text="You Won!" styleClass="title-label"/>
+    <Label fx:id="winnerLabel" text="Winner" styleClass="subtitle-label"/>
+
+    <HBox spacing="16" alignment="CENTER">
+        <Button text="Play Again" onAction="#onPlayAgainClicked" styleClass="primary-button"/>
+        <Button text="Exit" onAction="#onExitClicked" styleClass="secondary-button"/>
+    </HBox>
+
+</VBox>

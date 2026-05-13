@@ -1,0 +1,16 @@
+# Maven build output
+target/
+*/target/
+
+# IntelliJ files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# AWS key - never commit this
+*.pem

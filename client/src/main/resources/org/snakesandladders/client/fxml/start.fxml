@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.snakesandladders.client.controller.StartController"
+      styleClass="root-container"
+      stylesheets="@../css/style.css"
+      alignment="CENTER"
+      spacing="20">
+
+    <Label text="Snakes and Ladders" styleClass="title-label"/>
+    <Label text="Enter your name and server IP to join a game" styleClass="subtitle-label"/>
+
+    <VBox styleClass="form-container" spacing="12" alignment="CENTER">
+        <TextField fx:id="nameField" promptText="Your name" styleClass="input-field"/>
+        <TextField fx:id="ipField" promptText="Server IP address" styleClass="input-field"/>
+        <Button text="Connect" onAction="#onConnectClicked"
+                fx:id="connectButton" styleClass="primary-button"/>
+        <Label fx:id="statusLabel" text="" styleClass="status-label"/>
+    </VBox>
+
+</VBox>

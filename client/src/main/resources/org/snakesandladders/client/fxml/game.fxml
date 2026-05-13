@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.snakesandladders.client.controller.GameController"
+      styleClass="root-container"
+      stylesheets="@../css/style.css"
+      spacing="16"
+      alignment="CENTER">
+
+    <Canvas fx:id="boardCanvas" width="600" height="600"/>
+
+    <VBox spacing="12" alignment="TOP_CENTER" styleClass="side-panel">
+
+        <Label text="Players" styleClass="section-title"/>
+
+        <VBox styleClass="player-card" spacing="4">
+            <Label fx:id="player1Label" text="Player 1" styleClass="player-name player1-color"/>
+            <Label fx:id="player1PosLabel" text="Position: 0" styleClass="player-pos"/>
+        </VBox>
+
+        <VBox styleClass="player-card" spacing="4">
+            <Label fx:id="player2Label" text="Player 2" styleClass="player-name player2-color"/>
+            <Label fx:id="player2PosLabel" text="Position: 0" styleClass="player-pos"/>
+        </VBox>
+
+        <Label fx:id="statusLabel" text="Connecting..." styleClass="status-label" wrapText="true"/>
+
+        <Button fx:id="rollButton" text="Roll Dice"
+                onAction="#onRollClicked" styleClass="primary-button"/>
+
+        <Label text="Game Log" styleClass="section-title"/>
+
+        <ScrollPane fx:id="chatScrollPane" styleClass="chat-scroll"
+                    fitToWidth="true" VBox.vgrow="ALWAYS">
+            <VBox fx:id="chatBox" styleClass="chat-box" spacing="2"/>
+        </ScrollPane>
+
+        <HBox spacing="6">
+            <TextField fx:id="chatInput" promptText="Send a message..."
+                       styleClass="input-field" HBox.hgrow="ALWAYS"/>
+            <Button text="Send" onAction="#onSendChatClicked" styleClass="secondary-button"/>
+        </HBox>
+
+    </VBox>
+
+</HBox>

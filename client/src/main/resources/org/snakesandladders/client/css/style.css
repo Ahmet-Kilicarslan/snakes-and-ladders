@@ -1,0 +1,128 @@
+.root-container {
+    -fx-background-color: #1a1a2e;
+    -fx-padding: 24;
+}
+
+.title-label {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: "Arial";
+}
+
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #a0a0b0;
+}
+
+.form-container {
+    -fx-background-color: #16213e;
+    -fx-padding: 28;
+    -fx-background-radius: 12;
+    -fx-min-width: 320;
+}
+
+.input-field {
+    -fx-background-color: #0f3460;
+    -fx-text-fill: #e0e0e0;
+    -fx-prompt-text-fill: #6a6a8a;
+    -fx-border-color: #533483;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 13px;
+}
+
+.primary-button {
+    -fx-background-color: #533483;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10 24 10 24;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #6a45a0;
+}
+
+.primary-button:disabled {
+    -fx-background-color: #3a3a5a;
+    -fx-text-fill: #6a6a8a;
+}
+
+.secondary-button {
+    -fx-background-color: #0f3460;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #1a4a80;
+}
+
+.side-panel {
+    -fx-background-color: #16213e;
+    -fx-padding: 16;
+    -fx-background-radius: 12;
+    -fx-min-width: 260;
+    -fx-max-width: 260;
+}
+
+.section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a0a0c0;
+    -fx-padding: 4 0 4 0;
+}
+
+.player-card {
+    -fx-background-color: #0f3460;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+}
+
+.player-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.player1-color {
+    -fx-text-fill: #3498DB;
+}
+
+.player2-color {
+    -fx-text-fill: #E67E22;
+}
+
+.player-pos {
+    -fx-font-size: 12px;
+    -fx-text-fill: #a0a0b0;
+}
+
+.status-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #e0c060;
+    -fx-wrap-text: true;
+}
+
+.chat-scroll {
+    -fx-background-color: transparent;
+    -fx-background: #0f3460;
+    -fx-background-radius: 6;
+}
+
+.chat-box {
+    -fx-padding: 6;
+    -fx-background-color: #0f3460;
+}
+
+.chat-box .label {
+    -fx-text-fill: #c0c0d0;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+}
